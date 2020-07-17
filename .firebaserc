@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "async-ef1d0"
+  },
+  "targets": {
+    "async-ef1d0": {
+      "hosting": {
+        "blend-commerce": [
+          "async-ef1d0"
+        ]
+      }
+    }
+  }
+}

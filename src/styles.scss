@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+
+$stdSpacing: 15%;
+$overBlackText : white;
+$stdTextFont: Open Sans;
+
+body{
+    margin:0;
+}
+.header-container{
+    position: fixed;
+    background-color: white;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    border:black 1px solid;
+}
+.dropshadow-shape{
+    width: 100%;
+}
+                
+.wrap{position: relative;}
+.content{
+    width:100%;
+}
+.content,svg{position: absolute;}
+h1{
+    color:$overBlackText;
+}
+#logo{
+    margin-top:100px;
+    margin-left: $stdSpacing;
+    scale: 40%;
+}
+#telenumbers{
+    text-align: right;
+    color:$overBlackText;
+    position: relative;
+    top:10px;
+}
+.top-container{
+    top: 10px;
+    height: 30%;
+    position: absolute;
+    margin-left:50%
+}
+.taglines{
+    font-family: $stdTextFont;
+    margin-left: $stdSpacing;
+}
+.taglinessm{
+    font-size:1em;
+    color: coral;
+    font-weight: 200;
+}
+.taglinesbg{
+    color:$overBlackText;
+    font-size:4em;
+    margin: 0px;
+}
+.shopifydata{
+    color:$overBlackText;
+    font-size:1em;
+    margin-left: $stdSpacing;
+}
+.client-box{
+    margin-top: 50px;
+    padding-top: 15px;
+    height:100px;width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: $stdSpacing;
+    border: 1px black solid;
+    background-color: white;
+}
+.client-img{
+   max-width: 80px;
+   max-height: 40px;
+    padding: 20px;
+}
+
+@media (min-width: 801px) and (max-width: 5000px){
+    .menu-items{
+        position: relative;
+        top:30%;
+        height: 20px;
+        color:$overBlackText;
+        font-weight: 200;
+    }
+    .small-menu{
+        display: none ;
+    }
+}
+@media (min-width: 300px) and (max-width: 800px){
+    .menu-items{
+        display: none ;
+    }
+    .small-menu{
+        position: relative;
+        color:$overBlackText;
+        display: block;
+        top:30%;
+        height: 20px;
+
+    }
+
+}
